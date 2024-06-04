@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita el scroll horizontal en toda la página */
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 430px) {
+    .header-padre {
+        padding: 1rem;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    .cabeza {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .div-cabeza {
+        padding: .5rem;
+        border: 1px solid rgb(201, 201, 201);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    .div-form {
+        display: flex;
+        gap: 9px;
+    }
+
+    .lupa-btn {
+        border: none;
+        background-color: white;
+    }
+
+    .lupa-img {
+        width: 30px;
+    }
+
+    .div-cabeza input {
+        width: 100%;
+    }
+
+    .fltro {
+        cursor: pointer;
+    }
+
+    .fltro rect {
+        transition: fill 0.3s ease;
+    }
+
+    .fltro.active rect {
+        fill: black;
+    }
+
+    .fltro path {
+        transition: fill 0.3s ease;
+    }
+
+    .fltro.active path {
+        fill: white;
+    }
+
+    .fltro {
+        border-radius: 50%;
+    }
+
+    /* Sección Ofertas */
+    .ofertas {
+        margin-top: 1rem;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        background: #ffffff;
+        padding: 2rem 0;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(35,150,255,1) 100%);
+    }
+
+    .ofertas h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .ofertas p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ofertas .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /*Que estas buscando*/
+
+    .que_estas_buscando {
+        padding: 2rem 0;
+    }
+
+    .que_estas_buscando .dentro-que-estas-buscando {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding: .3rem;
+    }
+    .dentro-que-estas-buscando a {
+        margin: 1rem;
+        color: black;
+    }
+
+    .opciones {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .opcion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex: 0 0 auto;
+        width: 100px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+    }
+
+    .opcion img {
+       width: 100%;
+    }
+
+    .opcion p {
+        margin: 0; 
+        font-size: 1rem; 
+    }
+
+
+    /* Sección Lo más Vendido */
+
+    .cards-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 20px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        width: 300px;
+    }
+
+    .mas-vendido {
+        padding: 2rem 0;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header .ver-mas {
+        font-size: 1rem;
+    }
+
+    .card-body h5 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Navegador*/
+    .navegador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        border-radius: 15px 15px 0 0;
+        padding: .4rem;
+        position: relative;
+    }
+
+    .primeros2 {
+        display: flex;
+        margin-right: 30px;
+        gap: 30px;
+    }
+
+    .ultimos2 {
+        display: flex;
+        margin-left: 10px;
+        gap: 30px;
+    }
+
+    .items-nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: black;
+        text-decoration: none;
+    }
+
+    .favoritos {
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #2E3192;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .favoritos path {
+        color: white;
+    }
+}
