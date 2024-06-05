@@ -111,6 +111,7 @@
     display: flex;
     flex-direction: column;
   }
+  
 
   .category {
     display: flex;
@@ -123,9 +124,12 @@
  
 
   .category img {
-    width: 100%;
-    object-fit: cover;
-   
+
+    height: 120px;
+
+    width: 120px;
+    
+    }
   }
 
   .category p {
@@ -184,4 +188,4 @@
   .favoritos path {
     color: white;
   }
-}
+
