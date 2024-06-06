@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="./">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -17,8 +18,86 @@
                     </button> 
                     <input type="text" class="form-control">
                 </form>
-                <svg  id="filter-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-filter fltro" viewBox="0 0 16 16" aria-label="Filter"><rect width="100%" height="100%" fill="transparent"></rect><path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/></svg>
-            </div>
+               
+               <div class="dropdown">
+                <svg  id="filter-icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-filter fltro" viewBox="0 0 16 16" aria-label="Filter"><rect width="100%" height="100%" fill="transparent"></rect><path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/></svg>
+                <ul class="dropdown-menu">
+                    <div class="container mt-5">
+                        <h5>Filtro</h5>
+                        <div class="filter-container">
+                        
+                        <div class="papa-producto">
+                              <img src="../img/buzo-canguro-rustico-beige1-20507034b4a83904cd16880467893341-640-0-removebg-preview (1).png" alt="Remeras">
+                              <p>Remeras</p>
+                            </div>
+                              
+                              <div class="papa-producto">
+                              <img src="../img/jean-removebg-preview.png" alt="Cargos">
+                              <p>Cargos</p>
+                            </div>
+                              
+                            
+                            <div class="papa-producto">
+                            <img src="../img/Remera-sublimar-hombre--removebg-preview.png" alt="Buzos">
+                            <p>Buzos</p>
+                          </div>
+                              
+                          <div class="papa-producto">
+                            <img src="../img/Remera-sublimar-hombre--removebg-preview.png" alt="Buzos">
+                            <p>Buzos</p>
+                          </div>
+                          <div class="papa-producto">
+                            <img src="../img/Remera-sublimar-hombre--removebg-preview.png" alt="Buzos">
+                            <p>Buzos</p>
+                          </div>
+                          <div class="papa-producto">
+                            <img src="../img/Remera-sublimar-hombre--removebg-preview.png" alt="Buzos">
+                            <p>Buzos</p>
+                          </div>
+                          <div class="papa-producto">
+                            <img src="../img/Remera-sublimar-hombre--removebg-preview.png" alt="Buzos">
+                            <p>Buzos</p>
+                          </div>
+                          <div class="papa-producto">
+                            <img src="../img/Remera-sublimar-hombre--removebg-preview.png" alt="Buzos">
+                            <p>Buzos</p>
+                          </div>  
+                            <!-- Add more categories as needed -->
+                          </div>
+                          <div class="talle">
+                            <label>Talle</label>
+                            <div class="sizee">
+                              <button class="btn-talle">XS</button>
+                              <button class="btn-talle">S</button>
+                              <button class="btn-talle">M</button>
+                              <button class="btn-talle">L</button>
+                              <button class="btn-talle">XL</button>
+                              <button class="btn-talle">XXL</button>
+                            </div>
+                          </div>
+                         
+                          <div class="papa-color">
+                            <label>Color</label>
+                            <div class="color">
+                                <button type="button" class="btn btn-primary kali"></button>
+                                <button type="button" class="btn btn-secondary kali"></button>
+                                <button type="button" class="btn btn-success kali"></button>
+                                <button type="button" class="btn btn-danger kali"></button>
+                                <button type="button" class="btn btn-warning kali"></button>
+                                <button type="button" class="btn btn-info kali"></button>
+                                <button type="button" class="btn btn-light kali"></button>
+                                <button type="button" class="btn btn-dark kali"></button>
+                            </div>
+                          </div>
+                          <div class="papa-rango"></div>
+                          <label for="customRange1" class="form-label">precio</label>
+                          <div class="aieka">
+                          <label for="">10.000</label>
+                          <label for="">50.000</label>
+                        </div>
+                    <input type="range" class="form-range" id="customRange1">
+                </ul>
+              </div>
         </header>
     </div>
     
@@ -155,7 +234,8 @@
             </div>
         </div>
     </div>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-T5NXZFeWG3dbAjV/nGOOnUDlfTk8D2Q4cM8Fnp7K2Sb7pyo6lJ04unYfFNUG1TOg" crossorigin="anonymous"></script>
     <script src="../js/index.js"></script>
 </body>

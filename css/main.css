@@ -247,3 +247,107 @@ body {
         color: white;
     }
 }
+
+
+
+.filter-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .filter-category img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  .filter-category {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+.kali{
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+margin-right: 5px;
+  width: 30px;
+  margin-top: 0.5rem;
+}
+.papa-rango{
+margin-top: 2rem;
+}
+  .price-range {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-filter {
+    margin-top: 20px;
+  }
+
+.aieka{
+  display: flex;
+  justify-content: space-between ;
+ 
+}
+.form-range{
+  width: 90vw;
+}
+.filter-container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.papa-producto{
+display: flex;
+justify-content: center;
+ border-radius: 30px;
+
+align-items: center;
+padding: 5px;
+flex-direction: column;
+
+  width:70px;
+
+}
+.papa-producto:hover{
+background-color: rgb(54, 143, 216);
+}
+img{
+width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.talle{
+display: flex;
+justify-content: start;
+ flex-direction: column;
+ gap: 1rem;
+ margin-top: 0rem;
+}
+
+.btn-talle{
+border: 2px solid rgb(54, 143, 216);
+border-radius: 5px;
+margin-right: 5px;
+width: auto;
+padding: 6px;
+}
+.btn-talle:hover{
+background-color: rgb(54, 143, 216);
+}
+
+.papa-color{
+margin-top: 2rem;
+}
+
+label{
+font-weight: bold;
+font-family:monospace;
+}
+
+p{
+font-family:monospace;
+}
+.dropdown-menu{
+    width: 100vw;
+}
