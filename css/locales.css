@@ -1,0 +1,50 @@
+body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background-image: url('../img/12150.jfif ');
+    background-size: cover;
+    border-radius: 15px;
+    
+}
+
+.descuento-local {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(51, 102, 255, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.txt-local {
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: rgb(1, 251, 105);
+   
+}
+
+.content h2 {
+    margin: 0;
+    font-size: 18px;
+   
+}
+
+.content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
